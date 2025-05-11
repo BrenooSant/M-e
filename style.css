@@ -1,6 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap);
 
-
 *,
 ::before,
 ::after {
@@ -95,7 +94,7 @@ body  {
 	filter: blur(var(--shadow-blur));
 }
 
-.envelope:hover {
+.envelope.open {
 	--envelope-transform: var(--envelope-transform-hover, 0deg);
 	--evelope-rotate-delay: var(--evelope-rotate-delay-hover);
 	--shadow-transform: rotateY(180deg);
@@ -105,6 +104,7 @@ body  {
 	--letter-height: var(--letter-height-hover);
 	--letter-delay: var(--letter-delay-hover);
 }
+
 
 .envelope-inner {
 	position: relative;
